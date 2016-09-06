@@ -1,6 +1,6 @@
 var Milight = {
   box: {}, // Initilisation d'un objet vide
-  ip: '10.10.100.254', // Adresse IP du serveur Milight (par defaut: '10.10.100.254')
+  ip: '192.168.1.85', // Adresse IP du serveur Milight (par defaut: '10.10.100.254')
 
   init: function (cb) {
     if (typeof(this.box.command) !== 'undefined') {
