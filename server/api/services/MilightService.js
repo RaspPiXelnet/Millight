@@ -22,16 +22,18 @@ var Milight = {
     }
   },
 
-  on: function (box, zone) {
+  on: function (box, zone, cb) {
     this.getZone(zone, function (z) {
       box.command(MilightCommandsService.rgbw.on(z));
+      cb()
     });
   },
 
-  off: function (box, zone) {
+  off: function (box, zone, cb) {
     this.getZone(zone, function (z) {
       box.command(MilightCommandsService.rgbw.off(z));
     });
+    cb()
   },
 
   color: function (box, zone, hue, cb) {

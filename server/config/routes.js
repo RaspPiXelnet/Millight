@@ -53,6 +53,7 @@ module.exports.routes = {
   'GET /color/hue/:hue': 'MilightController.changeColorHue',
   'GET /brightness/:percent': 'MilightController.setBrightness',
   'GET /cron/:date': 'MilightController.addCron',
-  'GET /googlecal': 'MilightController.getGoogleCal'
+  'GET /googlecal': 'MilightController.getGoogleCal',
+  'GET /test/weather': 'Weather.test'
 
 };
