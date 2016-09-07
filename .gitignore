@@ -1,2 +1,3 @@
 server/config/google.js
 server/config/rtorrent.js
+server/config/rpiApp.js
